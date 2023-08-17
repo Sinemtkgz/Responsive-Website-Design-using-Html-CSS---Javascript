@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  padding: 100px;
+}
+
+section .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #a00202;
+  clip-path: circle(70% at right -20%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+}
+
+header .logo {
+  position: relative;
+  max-width: 130px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 40px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.content .textBox h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.4em;
+  margin-bottom: 10px;
+}
+
+.content .textBox p {
+  color: white;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #a00202;
+  color: white;
+  border-radius: 10px 100px / 120px 100px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.sci {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  margin-left: 15px;
+  background: #222;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+
+}
+
+.sci li a:hover {
+  background: #a00202;
+  transform: translateY(-10px);
+}
+
+.sci li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
